@@ -8,12 +8,11 @@ from pyrogram.types import Message
 from Yukki import BOT_ID, SUDOERS, app
 from Yukki.Utilities.formatters import bytes
 
-__MODULE__ = "Speedtest"
+__MODULE__ = "𝖧𝗂𝗓 𝖳𝖾𝗌𝗍𝗂"
 __HELP__ = """
 
 /speedtest 
-- Check Server Latency and Speed.
-
+- 𝖡𝗈𝗍𝗎𝗇 𝖭𝖾 𝗄𝖺𝖽𝖺𝗋 𝗁𝗂𝗓𝗅𝗂 𝗈𝗅𝖽𝗎𝗀𝗎𝗇𝗎 𝗀𝗈𝗋𝗎𝗇
 """
 
 

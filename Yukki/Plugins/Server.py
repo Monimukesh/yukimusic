@@ -25,32 +25,32 @@ from Yukki.Utilities.paste import isPreviewUp, paste_queue
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-__MODULE__ = "Server"
+__MODULE__ = "𝖲𝗎𝗇𝗎𝖼𝗎"
 __HELP__ = f"""
 
-**Note:**
-**Only for Sudo Users**
+**Not:**
+**Yalnızca Sudo Kullanıcıları için**
 
 /get_log
-- Get log of last 100 lines from Heroku.
+- Heroku'dan son 100 satırın günlüğünü alın.
 
 /get_var
-- Get a config var from Heroku or .env.
+- Heroku veya .env'den bir yapılandırma değişkeni alın.
 
 /del_var
-- Delete any var on Heroku or .env.
+- Heroku veya .env üzerindeki herhangi bir değişkeni silin.
 
-/set_var [Var Name] [Value]
-- Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
+/set_var [Var ismi]
+- Heroku veya .env'de bir Var ayarlayın veya Var'ı güncelleyin. Var ve Değerini bir boşlukla ayırın.
 
 /usage
-- Get Dyno Usage.
+- Dyno Kullanımını Alın.
 
 /update
-- Update Your Bot.
+- Botunuzu Güncelleyin.
 
 /restart 
-- Restart Bot [All downloads, cache, raw files will be cleared too]. 
+- Botu Yeniden Başlatın [Tüm indirmeler, önbellek, ham dosyalar da temizlenecektir]. 
 """
 
 

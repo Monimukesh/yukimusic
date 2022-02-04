@@ -4,24 +4,24 @@ from pyrogram.types import Message
 from Yukki import SUDOERS, app
 from Yukki.Database import blacklist_chat, blacklisted_chats, whitelist_chat
 
-__MODULE__ = "Blacklist"
+__MODULE__ = "𝖪𝖺𝗋𝖺 𝖫𝗂𝗌𝗍𝖾"
 __HELP__ = """
 
 
 /blacklistedchat 
-- Check Blacklisted Chats of Bot.
+- Kara Listeye Alınmış Sohbetlerini Kontrol Edin.
 
 
-**Note:**
-Only for Sudo Users.
+**Not:**
+Yalnızca Sudo Kullanıcıları için.
 
 
 /blacklistchat [CHAT_ID] 
-- Blacklist any chat from using Music Bot
+- herhangi bir sohbeti kara listeye alın
 
 
 /whitelistchat [CHAT_ID] 
-- Whitelist any blacklisted chat from using Music Bot
+- kara listeye alınmış herhangi bir sohbeti beyaz listeye alın
 
 """
 
@@ -30,7 +30,7 @@ Only for Sudo Users.
 async def blacklist_chat_func(_, message: Message):
     if len(message.command) != 2:
         return await message.reply_text(
-            "**Usage:**\n/blacklistchat [CHAT_ID]"
+            "**𝖪𝗎𝗅𝗅𝖺𝗇𝗂𝗆:**\n/blacklistchat [CHAT_ID]"
         )
     chat_id = int(message.text.strip().split()[1])
     if chat_id in await blacklisted_chats():

@@ -9,21 +9,21 @@ from Yukki.Decorators.admins import AdminActual
 from Yukki.Utilities.changers import (alpha_to_int, int_to_alpha,
                                       time_to_seconds)
 
-__MODULE__ = "Auth Users"
+__MODULE__ = "𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋"
 __HELP__ = """
 
 **Note:**
--Auth users can skip, pause, stop, resume Voice Chats even without Admin Rights.
+- Yönetici Hakları olmadan bile Sesli Sohbetleri atlayabilir, duraklatabilir, durdurabilir ve devam ettirebilir.
 
 
-/auth [Username or Reply to a Message] 
-- Add a user to AUTH LIST of the group.
+/auth  
+- Grubun YETKİ LİSTESİ'ne bir kullanıcı ekleyin.
 
-/unauth [Username or Reply to a Message] 
-- Remove a user from AUTH LIST of the group.
+/unauth  
+- Grubun YETKİ LİSTESİ'nden bir kullanıcıyı kaldırın.
 
 /authusers 
-- Check AUTH LIST of the group.
+- Grubun YETKİ LİSTESİ'ni kontrol edin.
 """
 
 
@@ -33,7 +33,7 @@ async def auth(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "Reply to a user's message or give username/user_id."
+                "Bir kullanıcının mesajını yanıtlayın veya kullanıcı adı verin/user_id."
             )
             return
         user = message.text.split(None, 1)[1]

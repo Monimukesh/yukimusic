@@ -18,23 +18,25 @@ from Yukki.Utilities.assistant import get_assistant_details
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "Join/Leave"
+__MODULE__ = "𝖠𝗒𝗋𝗂𝗅/𝖪𝖺𝗍𝗂𝗅"
 __HELP__ = """
 
-**Note:**
-Only for Sudo Users
+**Not:**
+Yalnızca Sudo Kullanıcıları için
 
 
-/joinassistant [Chat Username or Chat ID]
-- Join assistant to a group.
+» /oynat 𝖪𝗈𝗆𝗎𝗍𝗎𝗇𝗎 𝗄𝗎𝗅𝗅𝖺𝗇𝖺𝗋𝖺𝗄 𝖺𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝗀𝗋𝗎𝖻𝖺 𝖽𝖺𝗏𝖾𝗍 𝖾𝖽𝖾𝖻𝗂𝗅𝗂𝗋𝗌𝗂𝗇𝗂𝗓 .
+
+/joinassistant [Grub Linki]
+- Bir gruba asistana katıl.
 
 
-/leaveassistant [Chat Username or Chat ID]
-- Assistant will leave the particular group.
+/leaveassistant [Grub Linki]
+- Asistan belirli bir gruptan ayrılacak.
 
 
-/leavebot [Chat Username or Chat ID]
-- Bot will leave the particular chat.
+/leavebot [Grub Linki]
+- Bot belirli sohbetten ayrılacaktır.
 """
 
 @app.on_callback_query(filters.regex("gback_list_chose_stream"))
@@ -45,7 +47,7 @@ async def gback_list_chose_stream(_, CallbackQuery):
     videoid, duration, user_id = callback_request.split("|")
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "This is not for you! Search You Own Song.", show_alert=True
+            "Bu senin için değil! Kendi Şarkını Ara.", show_alert=True
         )
     buttons = choose_markup(videoid, duration, user_id)
     await CallbackQuery.edit_message_reply_markup(
@@ -85,7 +87,7 @@ async def timer_checkup_markup(_, CallbackQuery):
         return await CallbackQuery.answer(f"Not Playing.", show_alert=True)
     else:
         return await CallbackQuery.answer(
-            f"No Active Voice Chat", show_alert=True
+            f"Aktif Sesli Sohbet Yok", show_alert=True
         )
 
 
@@ -98,7 +100,7 @@ async def activevc(_, message: Message):
         duration_min = db_mem[message.chat.id]["total"]
         got_queue = get_queue.get(message.chat.id)
         if not got_queue:
-            await mystic.edit(f"Nothing in Queue")
+            await mystic.edit(f"Kuyrukta hiçbir şey yok")
         fetched = []
         for get in got_queue:
             fetched.append(get)
@@ -137,7 +139,7 @@ async def activevc(_, message: Message):
         else:
             await mystic.edit(msg)
     else:
-        await message.reply_text(f"Nothing in Queue")
+        await message.reply_text(f"Kuyrukta hiçbir şey yok")
 
 
 @app.on_message(filters.command("activevc") & filters.user(SUDOERS))
@@ -165,7 +167,7 @@ async def activevc(_, message: Message):
             text += f"<b>{j + 1}. {title}</b> [`{x}`]\n"
         j += 1
     if not text:
-        await message.reply_text("No Active Voice Chats")
+        await message.reply_text("Aktif Sesli Sohbet Yok")
     else:
         await message.reply_text(
             f"**Active Voice Chats:-**\n\n{text}",

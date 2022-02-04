@@ -35,13 +35,13 @@ loop = asyncio.get_event_loop()
 __MODULE__ = "VideoCalls"
 __HELP__ = f"""
 
-/play [Reply to any Video] or [YT Link] or [Music Name]
-- Stream Video on Voice Chat
+/oynat veya /play 
+- Sesli Sohbette Video Akışı
 
-**For Sudo User:-**
+**Sudo Kullanıcısı için:-**
 
-/set_video_limit [Number of Chats]
-- Set a maximum Number of Chats allowed for Video Calls at a time.
+/set_video_limit 
+- Bir seferde Görüntülü Aramalar için izin verilen maksimum Sohbet Sayısını ayarlayın.
 
 
 """

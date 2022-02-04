@@ -148,7 +148,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
@@ -168,7 +168,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],

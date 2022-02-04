@@ -32,7 +32,7 @@ from Yukki.Utilities.youtube import (get_m3u8, get_yt_info_id,
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "VideoCalls"
+__MODULE__ = "𝖵𝗂𝖽𝖾𝗈"
 __HELP__ = f"""
 
 /oynat veya /play 

@@ -16,34 +16,34 @@ from Yukki.Database import (add_gban_user, add_off, add_on, add_sudo,
                             remove_gban_user, remove_served_chat, remove_sudo,
                             set_video_limit)
 
-__MODULE__ = "SudoUsers"
+__MODULE__ = "𝖲𝗎𝖽𝗈 𝖴𝗌𝖾𝗋"
 __HELP__ = """
 
 
 /sudolist 
-    Check the sudo user list of Bot. 
+    Bot'un sudo kullanıcı listesini kontrol edin. 
 
 
-**Note:**
-Only for Sudo Users. 
+**Not:**
+Sadece Sudo Kullanıcıları için. 
 
 
-/addsudo [Username or Reply to a user]
-- To Add A User In Bot's Sudo Users.
+/addsudo 
+- Sudo Kullanıcılarına Kullanıcı Eklemek için.
 
-/delsudo [Username or Reply to a user]
-- To Remove A User from Bot's Sudo Users.
+/delsudo
+- Bir Kullanıcıyı Sudo Kullanıcılarından Kaldırmak İçin.
 
-/maintenance [enable / disable]
-- When enabled Bot goes under maintenance mode. No one can play Music now!
+/maintenance [etkin / devre dışı]
+- Bot bakım moduna girer. Artık kimse Müzik çalamaz!
 
-/logger [enable / disable]
-- When enabled Bot logs the searched queries in logger group.
+/logger [etkin / devre dışı]
+- Bot, aranan sorguları günlükçü grubunda günlüğe kaydeder.
 
 /clean
-- Clean Temp Files and Logs.
+- Temp Dosyalarını ve Günlüklerini Temizleyin.
 """
-# Add Sudo Users!
+# Sudo Kullanıcıları Ekle!
 
 
 @app.on_message(filters.command("addsudo") & filters.user(OWNER_ID))

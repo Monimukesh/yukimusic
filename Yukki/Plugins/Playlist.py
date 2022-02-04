@@ -15,24 +15,24 @@ from Yukki.Inline import (add_genre_markup, check_genre_markup, check_markup,
                           others_markup, play_genre_playlist, playlist_markup,
                           third_playlist_markup)
 
-__MODULE__ = "Playlist"
+__MODULE__ = "𝖯𝗅𝖺𝗒𝖫𝗂𝗌𝗍"
 __HELP__ = """
 
 
 /playplaylist 
-- Start playing Your Saved Playlist.
+- Kaydedilmiş Çalma Listenizi oynatmaya başlayın.
 
 
 /playlist 
-- Check Your Saved Playlist On Servers.
+- Sunucularda Kaydedilmiş Oynatma Listenizi Kontrol Edin.
 
 
 /delmyplaylist
-- Delete any saved music in your playlist
+- Çalma listenizde kayıtlı tüm müzikleri silin
 
 
 /delgroupplaylist
-- Delete any saved music in your group's playlist [Requires Admin Rights.]
+- Grubunuzun çalma listesinde kayıtlı tüm müzikleri silin [Yönetici Hakları Gerektirir.]
 """
 
 

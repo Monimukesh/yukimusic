@@ -8,14 +8,11 @@ from youtubesearchpython import VideosSearch
 
 from Yukki import MUSIC_BOT_NAME, app
 
-__MODULE__ = "Lyrics"
+__MODULE__ = "𝖲𝖺𝗋𝗄𝗂 𝖲𝗈𝗓𝗎"
 __HELP__ = """
 
-/Lyrics [Music Name]
-- Searches Lyrics for the particular Music on web.
-
-**Note**:
-Inline button of Lyrics has some bugs. Searches only 50% results. You can use command instead if you want lyrics for any playing music.
+/Lyrics [ 𝖬𝗎𝗓𝗂𝗄 𝖺𝖽𝗂 ]
+- Web'de belirli bir Müzik için Şarkı Sözleri arar.
 
 """
 
@@ -38,7 +35,7 @@ async def lyricssex(_, CallbackQuery):
             title = result["title"]
     except Exception as e:
         return await CallbackQuery.answer(
-            "Sound not found. Youtube issues.", show_alert=True
+            "Ses bulunamadı. Youtube sorunları.", show_alert=True
         )
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
@@ -47,7 +44,7 @@ async def lyricssex(_, CallbackQuery):
     S = y.search_song(t, get_full_info=False)
     if S is None:
         return await CallbackQuery.answer(
-            "Lyrics not found :p", show_alert=True
+            "şarkı bulunamadı :p", show_alert=True
         )
     await CallbackQuery.message.delete()
     userid = CallbackQuery.from_user.id
@@ -55,13 +52,13 @@ async def lyricssex(_, CallbackQuery):
     xxx = f"""
 **Lyrics Search Powered By {MUSIC_BOT_NAME}**
 
-**Searched By:-** {usr}
-**Searched Song:-** __{title}__
+**Arayan:-** {usr}
+**Aranan Şarkı:-** __{title}__
 
-**Found Lyrics For:-** __{S.title}__
-**Artist:-** {S.artist}
+**Bulunan Şarkı Sözleri:-** __{S.title}__
+**Sanatçı:-** {S.artist}
 
-**__Lyrics:__**
+**Şarkı sözleri:**
 
 {S.lyrics}"""
     if len(xxx) > 4096:
@@ -91,13 +88,13 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("Lyrics not found :p")
     xxx = f"""
-**Lyrics Search Powered By {MUSIC_BOT_NAME}**
+**Şarkı Sözü Arama {MUSIC_BOT_NAME}**
 
-**Searched Song:-** __{query}__
-**Found Lyrics For:-** __{S.title}__
-**Artist:-** {S.artist}
+**Aranan Şarkı:-** __{query}__
+**Bulunan Şarkı Sözleri:-** __{S.title}__
+**Sanatçı:-** {S.artist}
 
-**__Lyrics:__**
+**Şarkı sözleri:**
 
 {S.lyrics}"""
     if len(xxx) > 4096:

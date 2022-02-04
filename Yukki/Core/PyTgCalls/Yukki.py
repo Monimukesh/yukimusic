@@ -424,7 +424,7 @@ async def skip_video_stream(chat_id: int, ytlink: str, quality, mystic):
             )
         except:
             return await mystic.edit(
-                "Failed to Change Video Stream.. Please Skip Again."
+                "Failed to change video stream please try again."
             )
     elif int(assistant) == 2:
         try:
@@ -521,7 +521,7 @@ async def playout_end(pytgclients, chat_id):
                     chat_id,
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"🎥<b>__Started Playing:__</b> {title} \n👤<b>__Requested by:__ </b> {mention}",
+                    caption=f"🎥<b> 𝖮𝗒𝗇𝖺𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺𝖽𝗂:</b> {title} \n📋<b> 𝖳𝖺𝗅𝖾𝗉: </b> {mention}",
                 )
                 await start_timer(
                     videoid,
@@ -549,7 +549,7 @@ async def playout_end(pytgclients, chat_id):
                     except:
                         return await app.send_message(
                             chat_id,
-                            "Some Error occured while switching video stream. Playout is on hold now. Please skip the stream to resume the voice chat.",
+                            "Video akışı değiştirilirken bazı Hatalar oluştu. Playout şu anda beklemede. Sesli sohbete devam etmek için lütfen yayını atlayın.",
                         )
                     c_title = db_mem[afk]["chat_title"]
                     chat_title = await specialfont_to_normal(c_title)
@@ -560,7 +560,7 @@ async def playout_end(pytgclients, chat_id):
                         photo="Utils/Telegram.JPEG",
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"**Video Streaming**\n\n🎥<b>__Started Playing:__ </b>Next Video from Telegram \n👤**__Requested by:__** {mention}"
+                            f"**𝖵𝗂𝖽𝖾𝗈 𝖠𝗄𝗂𝗌𝗂 **\n\n🎥<b> 𝖮𝗒𝗇𝖺𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺𝖽𝗂: </b>Telegram'dan Sonraki Video \n📋** 𝖳𝖺𝗅𝖾𝗉:** {mention}"
                         ),
                     )
                 else:
@@ -610,7 +610,7 @@ async def playout_end(pytgclients, chat_id):
                         photo=thumb,
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"**Video Streaming**\n\n🎥<b>__Started Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={afk}) \n👤**__Requested by:__** {mention}"
+                            f"**𝖵𝗂𝖽𝖾𝗈 𝖠𝗄𝗂𝗌𝗂 **\n\n🎥<b> 𝖮𝗒𝗇𝖺𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺𝖽𝗂: </b>[{title[:25]}](https://www.youtube.com/watch?v={afk}) \n📋** 𝖳𝖺𝗅𝖾𝗉:** {mention}"
                         ),
                     )
                     os.remove(thumb)
@@ -626,7 +626,7 @@ async def playout_end(pytgclients, chat_id):
             else:
                 mystic = await app.send_message(
                     chat_id,
-                    "**Playlist Function**\n\n__Downloading Next Music From Playlist....__",
+                    "**Çalma Listesi İşlevi**\n\n__Çalma Listesinden Sonraki Müziği İndirme....__",
                 )
                 (
                     title,
@@ -635,7 +635,7 @@ async def playout_end(pytgclients, chat_id):
                     thumbnail,
                 ) = get_yt_info_id(afk)
                 mystic = await mystic.edit(
-                    f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+                    f"**{MUSIC_BOT_NAME} 𝗂𝗇𝖽𝗂𝗋𝗂𝖼𝗂 **\n\n**𝖲𝗎𝗋𝖾:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
                 )
                 loop = asyncio.get_event_loop()
                 downloaded_file = await loop.run_in_executor(
@@ -667,7 +667,7 @@ async def playout_end(pytgclients, chat_id):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"🎥<b>__Started Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={afk}) \n👤**__Requested by:__** {mention}"
+                        f"🎥<b> 𝖮𝗒𝗇𝖺𝗆𝖺𝗒𝖺 𝖡𝖺𝗌𝗅𝖺𝖽𝗂: </b>[{title[:25]}](https://www.youtube.com/watch?v={afk}) \n📋**𝖳𝖺𝗅𝖾𝗉:** {mention}"
                     ),
                 )
                 os.remove(thumb)

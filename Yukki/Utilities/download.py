@@ -53,32 +53,32 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 j += 1
                 if j == 1:
                     a1 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲𝖾𝗌 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 2:
                     a2 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲𝖾𝗌 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 3:
                     a3 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲𝖾𝗌 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 4:
                     a4 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲𝖾𝗌 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 5:
                     a5 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲𝖾𝗌 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 6:
                     a6 = InlineKeyboardButton(
-                        text=f"Audio 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲𝖾𝗌 🎵 {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
         elif type == "video":
@@ -134,11 +134,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -152,11 +152,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -173,11 +173,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -195,11 +195,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -220,11 +220,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -246,11 +246,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⬅️  Go Back",
+                        text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -289,11 +289,11 @@ def get_type(type, format, videoid, user_id):
             ],
             [
                 InlineKeyboardButton(
-                    text="⬅️  Go Back",
+                    text="🛠️  𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
                     callback_data=f"good {videoid}|{user_id}",
                 ),
                 InlineKeyboardButton(
-                    text="🗑 Close Menu", callback_data=f"close2"
+                    text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                 ),
             ],
         ]

@@ -76,18 +76,18 @@ async def welcome(_, message: Message):
                 ) = await get_assistant_details(ran_ass)
                 out = start_pannel()
                 await message.reply_text(
-                    f"Welcome To {MUSIC_BOT_NAME}\n\nPromote me as administrator in your group otherwise I will not function properly.\n\nAssistant Username:- @{ASS_USERNAME}\nAssistant ID:- {ASS_ID}",
+                    f"• 𝖬𝖾𝗋𝗁𝖺𝖻𝖺 {MUSIC_BOT_NAME}\n\nBeni grubunuzda yönetici olarak atayın yoksa düzgün çalışmayacağım.\n\nKullanıcı adı:- @{ASS_USERNAME}\nAsistan ID:- {ASS_ID}",
                     reply_markup=InlineKeyboardMarkup(out[1]),
                 )
             if member.id in ASSIDS:
                 return await remove_active_chat(chat_id)
             if member.id in OWNER_ID:
                 return await message.reply_text(
-                    f"{MUSIC_BOT_NAME}'s Owner[{member.mention}] has just joined your chat."
+                    f"{MUSIC_BOT_NAME} 𝖲𝖺𝗁𝗂𝗉[{member.mention}] 𝖦𝗋𝗎𝖻𝗎𝗇𝗎𝗓𝖺 𝗄𝖺𝗍𝗂𝗅𝖽𝗂 . . ."
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"A member of {MUSIC_BOT_NAME}'s Sudo User[{member.mention}] has just joined your chat."
+                    f"𝖡𝗂𝗋 𝗎𝗒𝖾𝗌𝗂 {MUSIC_BOT_NAME} 𝖲𝗎𝖽𝗈 𝖪𝗎𝗅𝗅𝖺𝗇𝖼𝗂𝗌𝗂 [{member.mention}] 𝖦𝗋𝗎𝖻𝗎𝗇𝗎𝗓𝖺 𝗄𝖺𝗍𝗂𝗅𝖽𝗂 . . ."
                 )
             return
         except:
@@ -101,7 +101,7 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_text(
-            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+            f"𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝗎𝗇𝗎𝗓𝖺 𝖺𝗅𝖽𝗂𝗀𝗂𝗇𝗂𝗓 𝗂𝖼𝗂𝗇 𝗍𝖾𝗌𝖾𝗄𝗄𝗎𝗋𝗅𝖾𝗋 {message.chat.title}.\n{MUSIC_BOT_NAME} 𝗒𝖺𝗌𝗂𝗒𝗈𝗋 .\n\n𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 𝗂𝖼𝗂𝗇 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 𝖻𝗎𝗍𝗈𝗇𝗎𝗇𝖺 𝗍𝗂𝗄𝗅𝖺𝗒𝗂𝗇 𝗏𝖾 𝖽𝖾𝗌𝗍𝖾𝗄 𝗀𝗋𝗎𝖻𝗎𝗆𝗎𝗓𝖺 𝖻𝖺𝗌𝗏𝗎𝗋𝗆𝖺𝗒𝗂 𝗂𝗁𝗆𝖺𝗅 𝖾𝗍𝗆𝖾𝗒𝗂𝗇𝗂𝗓 . . .",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
@@ -132,10 +132,10 @@ async def settings(_, message: Message):
 
 @app.on_callback_query(filters.regex("okaybhai"))
 async def okaybhai(_, CallbackQuery):
-    await CallbackQuery.answer("Going Back ...")
+    await CallbackQuery.answer("Geri git ...")
     out = start_pannel()
     await CallbackQuery.edit_message_text(
-        text=f"Thanks for having me in {CallbackQuery.message.chat.title}.\n{MUSIC_BOT_NAME}is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+        text=f"𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝗎𝗇𝗎𝗓𝖺 𝖺𝗅𝖽𝗂𝗀𝗂𝗇𝗂𝗓 𝗂𝖼𝗂𝗇 𝗍𝖾𝗌𝖾𝗄𝗄𝗎𝗋𝗅𝖾𝗋 {CallbackQuery.message.chat.title}.\n{MUSIC_BOT_NAME} 𝗒𝖺𝗌𝗂𝗒𝗈𝗋 .\n\n𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 𝗂𝖼𝗂𝗇 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 𝖻𝗎𝗍𝗈𝗇𝗎𝗇𝖺 𝗍𝗂𝗄𝗅𝖺𝗒𝗂𝗇 𝗏𝖾 𝖽𝖾𝗌𝗍𝖾𝗄 𝗀𝗋𝗎𝖻𝗎𝗆𝗎𝗓𝖺 𝖻𝖺𝗌𝗏𝗎𝗋𝗆𝖺𝗒𝗂 𝗂𝗁𝗆𝖺𝗅 𝖾𝗍𝗆𝖾𝗒𝗂𝗇𝗂𝗓 . . .",
         reply_markup=InlineKeyboardMarkup(out[1]),
     )
 
@@ -170,15 +170,15 @@ async def EVE(_, CallbackQuery):
     chat_id = CallbackQuery.message.chat.id
     is_non_admin = await is_nonadmin_chat(chat_id)
     if not is_non_admin:
-        await CallbackQuery.answer("Changes Saved")
+        await CallbackQuery.answer("Değişiklikler kaydedildi")
         await add_nonadmin_chat(chat_id)
         await CallbackQuery.edit_message_text(
-            text=f"{text}\n\nAdmins Commands Mode to **Everyone**\n\nNow anyone present in this group can skip, pause, resume, stop music.\n\nChanges Done By @{checking}",
+            text=f"{text}\n\nYöneticiler Komutları Modu **Herkes**\n\nArtık bu grupta bulunan herkes müziği atlayabilir, duraklatabilir, devam ettirebilir, durdurabilir.\n\nTarafından Yapılan Değişiklikler @{checking}",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
         await CallbackQuery.answer(
-            "Commands Mode is Already Set To EVERYONE", show_alert=True
+            "Komutlar Modu Zaten HERKESE Ayarlanmış", show_alert=True
         )
 
 
@@ -191,13 +191,13 @@ async def AMS(_, CallbackQuery):
     is_non_admin = await is_nonadmin_chat(chat_id)
     if not is_non_admin:
         await CallbackQuery.answer(
-            "Commands Mode is Already Set To ADMINS ONLY", show_alert=True
+            "Komutlar Modu Zaten YALNIZCA YÖNETİCİLERE AYARLANMIŞTIR", show_alert=True
         )
     else:
         await CallbackQuery.answer("Changes Saved")
         await remove_nonadmin_chat(chat_id)
         await CallbackQuery.edit_message_text(
-            text=f"{text}\n\nSet Commands Mode to **Admins**\n\nNow only Admins present in this group can skip, pause, resume, stop musics.\n\nChanges Done By @{checking}",
+            text=f"{text}\n\nKomutlar Modunu **Yöneticiler** olarak ayarlayın\n\nArtık yalnızca bu grupta bulunan Yöneticiler müzikleri atlayabilir, duraklatabilir, devam ettirebilir, durdurabilir.\n\nTarafından Yapılan Değişiklikler @{checking}",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 

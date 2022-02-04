@@ -18,22 +18,22 @@ from Yukki.Utilities.tasks import add_task, rm_task
 
 # Eval and Sh module from WBB
 
-__MODULE__ = "Broadcast"
+__MODULE__ = "𝖸𝖺𝗒𝗂𝗇"
 __HELP__ = """
-**Note:**
-Only for Sudo Users.
+**Not:**
+Sadece Sudo Kullanıcıları için.
 
 
-/broadcast [Message or Reply to a Message]
-- Broadcast any message to Bot's Served Chats.
+/broadcast 
+- Sunulan Sohbetlerde mesaj yayınlayın.
 
 
-/broadcast_pin [Message or Reply to a Message]
-- Broadcast any message to Bot's Served Chats with message getting Pinned in chat [Disabled Notifications].
+/broadcast_pin 
+- Herhangi bir mesajı, sohbette Sabitlenen mesajla birlikte Bot'un Sunulan Sohbetlerine yayınlayın [Devre Dışı Bildirimler].
 
 
-/broadcast_pin_loud [Message or Reply to a Message]
-- Broadcast any message to Bot's Served Chats with message getting Pinned in chat [Enabled Notifications].
+/broadcast_pin_loud
+- Herhangi bir mesajı, sohbette Sabitlenen mesajla birlikte Bot'un Sunulan Sohbetlerine yayınlayın [Etkin Bildirimler].
 """
 
 

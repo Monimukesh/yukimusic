@@ -28,13 +28,13 @@ from Yukki.Inline import stats1, stats2, stats3, stats4, stats5, stats6, stats7
 from Yukki.Plugins import ALL_MODULES
 from Yukki.Utilities.ping import get_readable_time
 
-__MODULE__ = "Stats"
+__MODULE__ = "𝖲𝗍𝖺𝗍𝗌"
 __HELP__ = """
 
 
 /stats
-- Check the Stats of Bot.
-- Gets the stat of MongoDb , Assistant, System etc
+- Bot İstatistiklerini kontrol edin.
+- MongoDb, Asistan, Sistem vb. istatistiklerini alır
 """
 
 

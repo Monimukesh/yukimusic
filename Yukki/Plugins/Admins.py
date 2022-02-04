@@ -32,24 +32,24 @@ from Yukki.Utilities.youtube import get_m3u8, get_yt_info_id
 loop = asyncio.get_event_loop()
 
 
-__MODULE__ = "Voice Chat"
+__MODULE__ = "Sesli sohbet"
 __HELP__ = """
 
 
-/pause
-- Pause the playing music on voice chat.
+/durdur veya /pause
+- Sesli sohbette çalan müziği duraklat.
 
-/resume
-- Resume the paused music on voice chat.
+/devam veya /resume
+- Sesli sohbette duraklatılmış müziği devam ettirin.
 
-/skip
-- Skip the current playing music on voice chat
+/atla veya /skip
+- Sesli sohbette çalmakta olan müziği atla
 
-/end or /stop
-- Stop the playout.
+/son veya /end
+- Müziği durdurun.
 
 /queue
-- Check queue list.
+- Sıra listesini kontrol edin.
 
 
 **Note:**
@@ -64,7 +64,7 @@ Only for Sudo Users
 
 
 @app.on_message(
-    filters.command(["pause", "skip", "resume", "stop", "end"])
+    filters.command(["pause", "durdur", "skip", "atla", "resume", "devam", "son", "end"])
     & filters.group
 )
 @AdminRightsCheck
@@ -76,23 +76,23 @@ async def admins(_, message: Message):
     if not await is_active_chat(message.chat.id):
         return await message.reply_text("Nothing is playing on voice chat.")
     chat_id = message.chat.id
-    if message.command[0][1] == "a":
+    if message.command[0][1] == "a" or message.command[0][1] == "u":
         if not await is_music_playing(message.chat.id):
             return await message.reply_text("Music is already Paused.")
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
-            f"🎧 Voicechat Paused by {message.from_user.mention}!"
+            f"🎧 Sesli Sohbet Duraklatıldı {message.from_user.mention}!"
         )
-    if message.command[0][1] == "e":
+    if message.command[0][1] == "e" or message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
             return await message.reply_text("Music is already Playing.")
         await music_on(chat_id)
         await resume_stream(chat_id)
         await message.reply_text(
-            f"🎧 Voicechat Resumed by {message.from_user.mention}!"
+            f"🎧 Sesli Sohbet Tarafından Üstlenildi {message.from_user.mention}!"
         )
-    if message.command[0][1] == "t" or message.command[0][1] == "n":
+    if message.command[0][1] == "o" or message.command[0][1] == "n":
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
         wtfbro = db_mem[message.chat.id]
@@ -105,9 +105,9 @@ async def admins(_, message: Message):
         await remove_active_video_chat(chat_id)
         await stop_stream(chat_id)
         await message.reply_text(
-            f"🎧 Voicechat End/Stopped by {message.from_user.mention}!"
+            f"🎧 Sesli Sohbeti Bitiren/Durduran {message.from_user.mention}!"
         )
-    if message.command[0][1] == "k":
+    if message.command[0][1] == "k" or message.command[0][1] == "t":
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
         wtfbro = db_mem[message.chat.id]

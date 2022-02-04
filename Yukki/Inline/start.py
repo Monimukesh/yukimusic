@@ -20,7 +20,7 @@ def setting_markup2():
             ),
         ],
         [
-            InlineKeyboardButton(text="✖️ Close", callback_data="close"),
+            InlineKeyboardButton(text="✖️ 𝖪𝖺𝗉𝖺𝗍", callback_data="close"),
         ],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
@@ -31,7 +31,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
@@ -45,7 +45,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
@@ -55,7 +55,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -64,7 +64,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
@@ -74,7 +74,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -83,7 +83,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
@@ -93,10 +93,10 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -108,12 +108,12 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
@@ -123,18 +123,18 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -143,7 +143,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
@@ -154,7 +154,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -163,7 +163,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
                 ),
             ],
             [
@@ -174,10 +174,10 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -199,8 +199,8 @@ def setting_markup():
             ),
         ],
         [
-            InlineKeyboardButton(text="✖️ Close", callback_data="close"),
-            InlineKeyboardButton(text="🔙 Go Back", callback_data="okaybhai"),
+            InlineKeyboardButton(text="✖️ Kapat", callback_data="close"),
+            InlineKeyboardButton(text="🔙 Geri Git", callback_data="okaybhai"),
         ],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons

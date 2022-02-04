@@ -170,7 +170,7 @@ async def activevc(_, message: Message):
         await message.reply_text("Aktif Sesli Sohbet Yok")
     else:
         await message.reply_text(
-            f"**Active Voice Chats:-**\n\n{text}",
+            f"**Aktif Sesli Sohbetler:-**\n\n{text}",
             disable_web_page_preview=True,
         )
 

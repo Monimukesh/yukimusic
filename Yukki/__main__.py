@@ -33,7 +33,7 @@ HELPABLE = {}
 
 async def initiate_bot():
     with console.status(
-        "[magenta] Finalizing Booting...",
+        "[magenta] Önyüklemenin Sonlandırılması...",
     ) as status:
         try:
             chats = await get_active_video_chats()
@@ -54,7 +54,7 @@ async def initiate_bot():
         )
         console.print("Found {} Plugins".format(len(ALL_MODULES)) + "\n")
         status.update(
-            status="[bold red]Importing Plugins...",
+            status="[bold red]Eklentileri İçe Aktarma...",
             spinner="bouncingBall",
             spinner_style="yellow",
         )
@@ -298,7 +298,7 @@ async def start_command(_, message):
                 reply_markup=keyboard,
             )
         if name[0] == "i":
-            m = await message.reply_text("🔎 Fetching Info!")
+            m = await message.reply_text("🔎")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -312,26 +312,26 @@ async def start_command(_, message):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
+🔍__**Video İzleme Bilgileri**__
 
-❇️**Title:** {title}
+❇️**Başlık:** {title}
 
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
+⏳**Süre:** {duration} Mins
+👀**Görüntüleme:** `{views}`
+⏰**Yayınlanma Süresi:** {published}
+🎥**Kanal ismi:** {channel}
+📎**Kanal Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
 
-⚡️ __Searched Powered By {BOT_NAME}__"""
+⚡️  Destekleyen {BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 Watch Youtube Video", url=f"{link}"
+                            text="🎥 Youtube Videosunu İzle", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🔄 Close", callback_data="close"
+                            text="🔄 Kapat", callback_data="close"
                         ),
                     ],
                 ]
@@ -373,11 +373,10 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name},
+        """• 𝖬𝖾𝗋𝗁𝖺𝖻𝖺 {first_name},
 
-Click on the buttons for more information.
+𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 !
 
-All commands can be used with: /
 """.format(
             first_name=name
         ),
@@ -399,17 +398,16 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""Hello {query.from_user.first_name},
+    top_text = f"""• 𝖬𝖾𝗋𝗁𝖺𝖻𝖺 {query.from_user.first_name},
 
-Click on the buttons for more information.
+𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 !
 
-All commands can be used with: /
  """
     if mod_match:
         module = mod_match.group(1)
         text = (
             "{} **{}**:\n".format(
-                "Here is the help for", HELPABLE[module].__MODULE__
+                "İşte yardım için", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
         )
@@ -417,10 +415,10 @@ All commands can be used with: /
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Back", callback_data="help_back"
+                        text="↪️ Geri", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="🔄 Close", callback_data="close"
+                        text="🔄 Kapat", callback_data="close"
                     ),
                 ],
             ]

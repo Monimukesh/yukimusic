@@ -17,7 +17,7 @@ def others_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="✚ sɪᴢɪɴ ᴘʟᴀʏʟɪsᴛɪɴɪᴢ ",
+                text="✚ ʏᴏᴜ ᴘʟᴀʏʟɪsᴛ ",
                 callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
@@ -33,11 +33,11 @@ def others_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="🛠️ 𝖦𝖾𝗋𝗂 𝖦𝗂𝗍",
+                text="🛠️ ɢᴇʀɪ ɢɪᴛ",
                 callback_data=f"pr_go_back_timer {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗯️ 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍",
+                text="🗯️ ᴍᴇɴᴜʏᴜ ᴋᴀᴘᴀᴛ",
                 callback_data=f"close",
             ),
         ],
@@ -59,9 +59,9 @@ def download_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="🛠️ 𝖦𝖾𝗋𝗂 𝖦𝗂𝗍 ", callback_data=f"goback {videoid}|{user_id}"
+                text="🛠️ 𝖦𝖾𝗋𝗂 ɢᴇʀɪ ɢɪᴛ ", callback_data=f"goback {videoid}|{user_id}"
             ),
-            InlineKeyboardButton(text="🗯️ 𝖬𝖾𝗇𝗎𝗒𝗎 𝖪𝖺𝗉𝖺𝗍 ", callback_data=f"close"),
+            InlineKeyboardButton(text="🗯️ ᴍᴇɴᴜʏᴜ ᴋᴀᴘᴀᴛ ", callback_data=f"close"),
         ],
     ]
     return buttons

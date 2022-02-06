@@ -26,7 +26,7 @@ def url_markup(videoid, duration, user_id, query, query_type):
         ],
         [
             InlineKeyboardButton(
-                text="🔎 ᴅᴀʜᴀ ғᴀᴢʟᴀ sᴏɴᴜᴄ",
+                text="🔎 ᴅᴀʜᴀ ғᴀᴢʟᴀ",
                 callback_data=f"Search {query}|{user_id}",
             ),
             InlineKeyboardButton(

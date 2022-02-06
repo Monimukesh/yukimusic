@@ -235,7 +235,7 @@ home_text_pm = f"""**• ᴍᴇʀʜᴀʙᴀ ❤️
 
 • ʜᴇʀʜᴀɴɢɪ ʙɪʀ sᴏʀᴜɴ ɪʟᴇ ᴋᴀʀsɪʟᴀsɪʀsᴀɴɪᴢ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜᴍᴜᴢᴀ ʙᴀsᴠᴜʀᴍᴀʏɪ ɪʜᴍᴀʟ ᴇᴛᴍᴇʏɪɴ . . !
 
-• ᴋᴏᴍᴜᴛʟᴀʀ ɪᴄɪɴ ᴋᴏᴍᴜᴛʟᴀʀ ʙᴜᴛᴏɴᴜɴᴀ ᴛɪᴋʟᴀʏɪɴ . . !
+• ᴋᴏᴍᴜᴛʟᴀʀ ɪᴄɪɴ 📚 ᴋᴏᴍᴜᴛʟᴀʀ 📚 ʙᴜᴛᴏɴᴜɴᴀ ᴛɪᴋʟᴀʏɪɴ . . !
 
  **"""
 
@@ -354,7 +354,7 @@ async def start_command(_, message):
                 umention = f"[{sender_name}](tg://user?id={int(sender_id)})"
                 return await LOG_CLIENT.send_message(
                     LOG_GROUP_ID,
-                    f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                    f"{message.from_user.mention} kontrol etmek için bot başladı <code>VIDEO INFORMATION</code>\n\n**KULLANICI ID:** {sender_id}\n**KULLANICI ADI:** {sender_name}",
                 )
             return
     out = private_panel()
@@ -368,7 +368,7 @@ async def start_command(_, message):
         umention = f"[{sender_name}](tg://user?id={int(sender_id)})"
         return await LOG_CLIENT.send_message(
             LOG_GROUP_ID,
-            f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+            f"{message.from_user.mention} Bot'u yeni başlattı.\n\n**KULLANICI ID:** {sender_id}\n**KULLANICI ADI:** {sender_name}",
         )
     return
 
@@ -377,7 +377,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """**• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention}
+        """**• ᴍᴇʀʜᴀʙᴀ {first_name}
 
 𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 . . !
 
@@ -402,7 +402,7 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""**• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention}
+    top_text = f"""**• ᴍᴇʀʜᴀʙᴀ {first_name}
 
 𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 . . !
 

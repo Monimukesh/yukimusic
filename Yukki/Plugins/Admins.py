@@ -35,7 +35,6 @@ loop = asyncio.get_event_loop()
 __MODULE__ = "𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋"
 __HELP__ = """
 
-
 /bul veya /song
 - 𝖬𝗎𝗓𝗂𝗄 𝗂𝗇𝖽𝗂𝗋 .
 
@@ -57,15 +56,6 @@ __HELP__ = """
 /queue
 - 𝖬𝗎𝗓𝗂𝗄 𝗅𝗂𝗌𝗍𝖾𝗌𝗂𝗇𝗂 𝗄𝗈𝗇𝗍𝗋𝗈𝗅 𝖾𝗍 .
 
-
-**Not:**
-Yalnızca Sudo Kullanıcıları için
-
-/activevc
-- Botta aktif sesli sohbetleri kontrol edin.
-
-/activevideo
-- Botta aktif görüntülü aramaları kontrol edin.
 """
 
 
@@ -88,7 +78,7 @@ async def admins(_, message: Message):
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
-            f"🎧 𝖬𝗎𝗓𝗂𝗄 𝖣𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . ! {message.from_user.mention}!"
+            f"  𝖣𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . ! {message.from_user.mention}!"
         )
     if message.command[0][1] == "e" or message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
@@ -96,7 +86,7 @@ async def admins(_, message: Message):
         await music_on(chat_id)
         await resume_stream(chat_id)
         await message.reply_text(
-            f"🎧 𝖢𝖺𝗅𝗆𝖺𝗒𝖺 𝖽𝖾𝗏𝖺𝗆 𝖾𝖽𝗂𝗒𝗈𝗋 ..! {message.from_user.mention}!"
+            f" 𝖢𝖺𝗅𝗆𝖺𝗒𝖺 𝖽𝖾𝗏𝖺𝗆 𝖾𝖽𝗂𝗒𝗈𝗋 ..! {message.from_user.mention}!"
         )
     if message.command[0][1] == "o" or message.command[0][1] == "n":
         if message.chat.id not in db_mem:
@@ -111,7 +101,7 @@ async def admins(_, message: Message):
         await remove_active_video_chat(chat_id)
         await stop_stream(chat_id)
         await message.reply_text(
-            f"🎧 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖲𝗈𝗇𝗅𝖺𝗇𝖽𝗂𝗋𝗂𝗅𝖽𝗂 ..! \n{message.from_user.mention}!"
+            f" 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖲𝗈𝗇𝗅𝖺𝗇𝖽𝗂𝗋𝗂𝗅𝖽𝗂 ..! \n{message.from_user.mention}!"
         )
     if message.command[0][1] == "k" or message.command[0][1] == "t":
         if message.chat.id not in db_mem:

@@ -229,15 +229,13 @@ async def initiate_bot():
     console.print(f"\n[red]Botu Durdurma")
 
 
-home_text_pm = f"""**• ᴍᴇʀʜᴀʙᴀ ❤️
+home_text_pm = f"""**● ᴍᴇʀʜᴀʙᴀ ❤️
 
-• ᴛᴇʟᴇɢʀᴀᴍ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪɴᴅᴇ ᴍᴜᴢɪᴋ ᴅɪɴʟᴇᴍᴇɴɪᴢ ᴠᴇ ᴠɪᴅᴇᴏ ɪᴢʟᴇᴍᴇɴɪᴢ ɪᴄɪɴ ᴛᴀsᴀʀʟᴀɴᴍɪsᴛɪʀ . . !
+● ᴛᴇʟᴇɢʀᴀᴍ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪɴᴅᴇ ᴍᴜᴢɪᴋ ᴅɪɴʟᴇᴍᴇɴɪᴢ ᴠᴇ ᴠɪᴅᴇᴏ ɪᴢʟᴇᴍᴇɴɪᴢ ɪᴄɪɴ ᴛᴀsᴀʀʟᴀɴᴍɪsᴛɪʀ . . !
 
-• ʜᴇʀʜᴀɴɢɪ ʙɪʀ sᴏʀᴜɴ ɪʟᴇ ᴋᴀʀsɪʟᴀsɪʀsᴀɴɪᴢ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜᴍᴜᴢᴀ ʙᴀsᴠᴜʀᴍᴀʏɪ ɪʜᴍᴀʟ ᴇᴛᴍᴇʏɪɴ . . !
+● ʜᴇʀʜᴀɴɢɪ ʙɪʀ sᴏʀᴜɴ ɪʟᴇ ᴋᴀʀsɪʟᴀsɪʀsᴀɴɪᴢ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜᴍᴜᴢᴀ ʙᴀsᴠᴜʀᴍᴀʏɪ ɪʜᴍᴀʟ ᴇᴛᴍᴇʏɪɴ . . !
 
-• ᴋᴏᴍᴜᴛʟᴀʀ ɪᴄɪɴ 
-📚 ᴋᴏᴍᴜᴛʟᴀʀ 📚 ʙᴜᴛᴏɴᴜɴᴀ
- ᴛɪᴋʟᴀʏɪɴ . . !
+● 📚 ᴋᴏᴍᴜᴛʟᴀʀ 📚 ʙᴜᴛᴏɴᴜɴᴀ ᴛɪᴋʟᴀʏᴀʀᴀᴋ ᴋᴏᴍᴜᴛʟᴀʀɪ ᴏɢʀᴇɴᴇʙɪʟɪʀsɪɴɪᴢ . . !
 
  **"""
 
@@ -379,7 +377,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """**• ᴍᴇʀʜᴀʙᴀ ❤️
+        """**● ᴍᴇʀʜᴀʙᴀ ❤️
 
 𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 . . !
 
@@ -404,7 +402,7 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""**• ᴍᴇʀʜᴀʙᴀ ❤️
+    top_text = f"""**● ᴍᴇʀʜᴀʙᴀ ❤️
 
 𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 . . !
 
@@ -413,7 +411,7 @@ async def help_button(client, query):
         module = mod_match.group(1)
         text = (
             "{} **{}**:\n".format(
-                "İşte yardım için", HELPABLE[module].__MODULE__
+                "𝗂𝗌𝗍𝖾 𝗒𝖺𝗋𝖽𝗂𝗆 𝗂𝖼𝗂𝗇", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
         )

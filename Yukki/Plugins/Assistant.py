@@ -20,16 +20,6 @@ __HELP__ = f"""
 /checkassistant
 - Sohbetinizin tahsis edilen yardımcısını kontrol edin
 
-
-**Not:**
-- Sadece Sudo Kullanıcıları için
-
-
-/changeassistant [ASS NUMARA]
-- Önceki tahsis edilmiş asistanı yenisiyle değiştirin.
-
-/setassistant [ASS NUMARA]
-- Sohbet için bir asistan hesabı ayarlayın. 
 """
 
 
@@ -79,7 +69,7 @@ async def assis_change(_, message: Message):
     _assistant = await get_assistant(message.chat.id, "assistant")
     if not _assistant:
         await message.reply_text(
-            f"**__Star Music Bot Assistant Alloted__**\n\nAssistant No. **{ran_ass}**"
+            f"**__Star Müzik Bot Asistanı Atandı__**\n\nAssistant No. **{ran_ass}**"
         )
         assis = {
             "saveassistant": ran_ass,

@@ -11,23 +11,23 @@ def others_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🔎 𝖲𝖺𝗋𝗄𝗂 𝖲𝗈𝗓𝗅𝖾𝗋𝗂",
+                text="🔎 sᴀʀᴋɪ sᴏᴢʟᴇʀɪ",
                 callback_data=f"lyrics {videoid}|{user_id}",
             )
         ],
         [
             InlineKeyboardButton(
-                text="✚ 𝖲𝗂𝗓𝗂𝗇 𝖯𝗅𝖺𝗒𝖫𝗂𝗌𝗍 ",
+                text="✚ sɪᴢɪɴ ᴘʟᴀʏʟɪsᴛɪɴɪᴢ ",
                 callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="✚ 𝖦𝗋𝗎𝖻 𝖯𝗅𝖺𝗒𝖫𝗂𝗌𝗍",
+                text="✚ ɢʀᴜʙ ᴘʟᴀʏʟɪsᴛ",
                 callback_data=f"group_playlist {videoid}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="📥 𝖲𝖾𝗌/𝖵𝗂𝖽𝖾𝗈 𝗂𝗇𝖽𝗂𝗋",
+                text="📩 sᴇs/ᴠɪᴅᴇᴏ ɪɴᴅɪʀ",
                 callback_data=f"audio_video_download {videoid}|{user_id}",
             )
         ],
@@ -49,11 +49,11 @@ def download_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="📥 𝖲𝖾𝗌 𝖠𝗅 ",
+                text="📥 sᴇs ᴀʟ ",
                 callback_data=f"gets audio|{videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="📥 𝖵𝗂𝖽𝖾𝗈 𝖠𝗅 ",
+                text="📥 ᴠɪᴅᴇᴏ ᴀʟ ",
                 callback_data=f"gets video|{videoid}|{user_id}",
             ),
         ],

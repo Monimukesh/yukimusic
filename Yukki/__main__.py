@@ -214,7 +214,7 @@ async def initiate_bot():
             await LOG_CLIENT.join_chat("YukkiSupport")
         except:
             pass
-    console.print(f"└[red] Yukki Music Bot Boot Tamamlandı.")
+    console.print(f"└[red] Star Music Bot Tamamlandı.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
@@ -377,11 +377,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention}
+        """**• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention}
 
 𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 . . !
 
-""".format(
+**""".format(
             first_name=name
         ),
         keyboard,
@@ -402,11 +402,11 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention}
+    top_text = f"""**• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention}
 
 𝖣𝖺𝗁𝖺 𝖥𝖺𝗓𝗅𝖺 𝖻𝗂𝗅𝗀𝗂 𝗂𝖼𝗂𝗇 𝖻𝗎𝗍𝗈𝗇𝗅𝖺𝗋𝖺 𝗍𝗂𝗄𝗅𝖺 . . !
 
- """
+ **"""
     if mod_match:
         module = mod_match.group(1)
         text = (

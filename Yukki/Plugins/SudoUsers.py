@@ -23,7 +23,6 @@ __HELP__ = """
 /sudolist 
     Bot'un sudo kullanıcı listesini kontrol edin. 
 
-
 **Not:**
 Sadece Sudo Kullanıcıları için. 
 

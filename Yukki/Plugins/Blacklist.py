@@ -15,10 +15,8 @@ __HELP__ = """
 **Not:**
 Yalnızca Sudo Kullanıcıları için.
 
-
 /blacklistchat [CHAT_ID] 
 - herhangi bir sohbeti kara listeye alın
-
 
 /whitelistchat [CHAT_ID] 
 - kara listeye alınmış herhangi bir sohbeti beyaz listeye alın

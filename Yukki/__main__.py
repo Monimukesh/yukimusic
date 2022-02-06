@@ -229,7 +229,7 @@ async def initiate_bot():
     console.print(f"\n[red]Botu Durdurma")
 
 
-home_text_pm = f"""**• ᴍᴇʀʜᴀʙᴀ ❤️ {user.mention}
+home_text_pm = f"""**• ᴍᴇʀʜᴀʙᴀ ❤️ {user_name}
 
 • ᴛᴇʟᴇɢʀᴀᴍ sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀɪɴᴅᴇ ᴍᴜᴢɪᴋ ᴅɪɴʟᴇᴍᴇɴɪᴢ ᴠᴇ ᴠɪᴅᴇᴏ ɪᴢʟᴇᴍᴇɴɪᴢ ɪᴄɪɴ ᴛᴀsᴀʀʟᴀɴᴍɪsᴛɪʀ . . !
 

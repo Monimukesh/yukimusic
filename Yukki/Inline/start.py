@@ -31,7 +31,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -45,7 +45,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -55,7 +55,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
+                    text="📋  ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -64,7 +64,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -74,7 +74,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  ʙɪʟɢɪ ᴋᴀɴᴀʟɪ  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -83,7 +83,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -93,10 +93,10 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  ʙɪʟɢɪ ᴋᴀɴᴀʟɪ  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
+                    text="📋  ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -108,7 +108,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -123,7 +123,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -134,7 +134,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
+                    text="📋  ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -143,7 +143,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -154,7 +154,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  ʙɪʟɢɪ ᴋᴀɴᴀʟɪ  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -163,7 +163,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
+                    text="📚  ᴋᴏᴍᴜᴛʟᴀʀ  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -174,10 +174,10 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📝  𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅𝗂  📝", url=f"{SUPPORT_CHANNEL}"
+                    text="📝  ʙɪʟɢɪ ᴋᴀɴᴀʟɪ  📝", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📋  𝖣𝖾𝗌𝗍𝖾𝗄 𝖦𝗋𝗎𝖻𝗎  📋", url=f"{SUPPORT_GROUP}"
+                    text="📋  ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ  📋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]

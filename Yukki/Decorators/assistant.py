@@ -33,7 +33,7 @@ async def unban_assistant_(_, CallbackQuery):
                 show_alert=True,
             )
         return await CallbackQuery.edit_message_text(
-            "Asistan Yasağı Kaldırıldı. Try Playing Now."
+            "Asistan Yasağı Kaldırıldı. Şimdi Oynamayı Deneyin."
         )
 
 
@@ -63,7 +63,7 @@ def AssistantAdd(mystic):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🗑 Asistanın yasağını kaldır",
+                            text="🗑 ᴀsɪsᴛᴀɴ ʏᴀsᴀɢɪɴɪ ᴋᴀʟᴅɪʀ kaldır",
                             callback_data=f"unban_assistant a|{ASS_ID}",
                         )
                     ],

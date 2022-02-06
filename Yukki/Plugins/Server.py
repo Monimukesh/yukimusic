@@ -31,18 +31,6 @@ __HELP__ = f"""
 **Not:**
 **Yalnızca Sudo Kullanıcıları için**
 
-/get_log
-- Heroku'dan son 100 satırın günlüğünü alın.
-
-/get_var
-- Heroku veya .env'den bir yapılandırma değişkeni alın.
-
-/del_var
-- Heroku veya .env üzerindeki herhangi bir değişkeni silin.
-
-/set_var [Var ismi]
-- Heroku veya .env'de bir Var ayarlayın veya Var'ı güncelleyin. Var ve Değerini bir boşlukla ayırın.
-
 /usage
 - Dyno Kullanımını Alın.
 

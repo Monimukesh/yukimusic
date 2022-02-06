@@ -34,10 +34,8 @@ __HELP__ = """
 /start 
 - Bot'u başlatın.
 
-
 /help 
 - Komutları Yardımcı Menüsü Alın.
-
 
 /settings 
 - Ayarları Al düğmesi.

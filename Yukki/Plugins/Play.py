@@ -265,7 +265,7 @@ async def search_query_more(_, CallbackQuery):
             "Kendi Müziğinizi Arayın. Bu düğmeyi kullanmanıza izin verilmiyor.",
             show_alert=True,
         )
-    await CallbackQuery.answer("Searching More Results")
+    await CallbackQuery.answer("Daha Fazla Sonuç Arama")
     results = YoutubeSearch(query, max_results=5).to_dict()
     med = InputMediaPhoto(
         media="Utils/Result.JPEG",

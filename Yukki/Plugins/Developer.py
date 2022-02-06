@@ -23,14 +23,11 @@ __HELP__ = """
 **Not:**
 Sadece Sudo Kullanıcıları için.
 
-
 /broadcast 
 - Sunulan Sohbetlerde mesaj yayınlayın.
 
-
 /broadcast_pin 
 - Herhangi bir mesajı, sohbette Sabitlenen mesajla birlikte Bot'un Sunulan Sohbetlerine yayınlayın [Devre Dışı Bildirimler].
-
 
 /broadcast_pin_loud
 - Herhangi bir mesajı, sohbette Sabitlenen mesajla birlikte Bot'un Sunulan Sohbetlerine yayınlayın [Etkin Bildirimler].

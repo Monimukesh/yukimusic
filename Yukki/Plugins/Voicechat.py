@@ -21,17 +21,17 @@ loop = asyncio.get_event_loop()
 __MODULE__ = "𝖠𝗒𝗋𝗂𝗅/𝖪𝖺𝗍𝗂𝗅"
 __HELP__ = """
 
+» /oynat 𝖪𝗈𝗆𝗎𝗍𝗎𝗇𝗎 𝗄𝗎𝗅𝗅𝖺𝗇𝖺𝗋𝖺𝗄 𝖺𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝗀𝗋𝗎𝖻𝖺 𝖽𝖺𝗏𝖾𝗍 𝖾𝖽𝖾𝖻𝗂𝗅𝗂𝗋𝗌𝗂𝗇𝗂𝗓 .
+
 **Not:**
 Yalnızca Sudo Kullanıcıları için
 
 
-» /oynat 𝖪𝗈𝗆𝗎𝗍𝗎𝗇𝗎 𝗄𝗎𝗅𝗅𝖺𝗇𝖺𝗋𝖺𝗄 𝖺𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝗀𝗋𝗎𝖻𝖺 𝖽𝖺𝗏𝖾𝗍 𝖾𝖽𝖾𝖻𝗂𝗅𝗂𝗋𝗌𝗂𝗇𝗂𝗓 .
-
-/joinassistant [Grub Linki]
+/joinassistant [ Grub Linki ]
 - Bir gruba asistana katıl.
 
 
-/leaveassistant [Grub Linki]
+/leaveassistant [ Grub Linki ]
 - Asistan belirli bir gruptan ayrılacak.
 
 

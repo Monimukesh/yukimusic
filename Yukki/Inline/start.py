@@ -8,15 +8,15 @@ from Yukki import BOT_USERNAME
 def setting_markup2():
     buttons = [
         [
-            InlineKeyboardButton(text="🔈 Audio Quality", callback_data="AQ"),
-            InlineKeyboardButton(text="🎚 Audio Volume", callback_data="AV"),
+            InlineKeyboardButton(text="🔈 Ses kalitesi", callback_data="AQ"),
+            InlineKeyboardButton(text="🎚 Ses Seviyesi", callback_data="AV"),
         ],
         [
             InlineKeyboardButton(
-                text="👥 Authorized Users", callback_data="AU"
+                text="👥 Yetkili Kullanıcılar", callback_data="AU"
             ),
             InlineKeyboardButton(
-                text="💻 Dashboard", callback_data="Dashboard"
+                text="💻 Gösterge Paneli", callback_data="Dashboard"
             ),
         ],
         [
@@ -31,7 +31,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -45,7 +45,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -64,7 +64,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -83,7 +83,7 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -108,7 +108,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -123,7 +123,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -143,7 +143,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -163,7 +163,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗯️  𝖡𝗂𝗅𝗀𝗂 𝗏𝖾 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  🗯️", callback_data="shikhar"
+                    text="📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  📚", callback_data="shikhar"
                 ),
             ],
             [
@@ -187,15 +187,15 @@ def private_panel():
 def setting_markup():
     buttons = [
         [
-            InlineKeyboardButton(text="🔈 Audio Quality", callback_data="AQ"),
-            InlineKeyboardButton(text="🎚 Audio Volume", callback_data="AV"),
+            InlineKeyboardButton(text="🔈 Ses kalitesi", callback_data="AQ"),
+            InlineKeyboardButton(text="🎚 Ses Seviyesi", callback_data="AV"),
         ],
         [
             InlineKeyboardButton(
                 text="👥 Authorized Users", callback_data="AU"
             ),
             InlineKeyboardButton(
-                text="💻 Dashboard", callback_data="Dashboard"
+                text="💻 Gösterge Paneli", callback_data="Dashboard"
             ),
         ],
         [
@@ -210,23 +210,23 @@ def volmarkup():
     buttons = [
         [
             InlineKeyboardButton(
-                text="🔄 Reset Audio Volume 🔄", callback_data="HV"
+                text="🔄 Ses Seviyesini Sıfırla 🔄", callback_data="HV"
             )
         ],
         [
-            InlineKeyboardButton(text="🔈 Low Vol", callback_data="LV"),
-            InlineKeyboardButton(text="🔉 Medium Vol", callback_data="MV"),
+            InlineKeyboardButton(text="🔈 Düşük Hacim", callback_data="LV"),
+            InlineKeyboardButton(text="🔉 Orta Hacim", callback_data="MV"),
         ],
         [
-            InlineKeyboardButton(text="🔊 High Vol", callback_data="HV"),
-            InlineKeyboardButton(text="🔈 Amplified Vol", callback_data="VAM"),
+            InlineKeyboardButton(text="🔊 Yüksek Hacim", callback_data="HV"),
+            InlineKeyboardButton(text="🔈 Güçlendirilmiş Cilt", callback_data="VAM"),
         ],
         [
             InlineKeyboardButton(
-                text="🔽 Custom Volume 🔽", callback_data="Custommarkup"
+                text="🔽 Özel Hacim 🔽", callback_data="Custommarkup"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Geri gitmek", callback_data="settingm")],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
 
@@ -245,7 +245,7 @@ def custommarkup():
             InlineKeyboardButton(text="+50", callback_data="PFZ"),
             InlineKeyboardButton(text="-50", callback_data="MFZ"),
         ],
-        [InlineKeyboardButton(text="🔼Custom Volume 🔼", callback_data="AV")],
+        [InlineKeyboardButton(text="🔼 Özel Hacim 🔼", callback_data="AV")],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
 
@@ -253,15 +253,15 @@ def custommarkup():
 def usermarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="👥 Everyone", callback_data="EVE"),
-            InlineKeyboardButton(text="🙍 Admins", callback_data="AMS"),
+            InlineKeyboardButton(text="👥 Herkes", callback_data="EVE"),
+            InlineKeyboardButton(text="🙍 Yöneticiler", callback_data="AMS"),
         ],
         [
             InlineKeyboardButton(
-                text="📋 Authorized Users Lists", callback_data="USERLIST"
+                text="📋 Yetkili Kullanıcı Listeleri", callback_data="USERLIST"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Geri Git", callback_data="settingm")],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
 
@@ -269,13 +269,13 @@ def usermarkup():
 def dashmarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="✔️ Uptime", callback_data="UPT"),
+            InlineKeyboardButton(text="✔️ çalışma süresi", callback_data="UPT"),
             InlineKeyboardButton(text="💾 Ram", callback_data="RAT"),
         ],
         [
             InlineKeyboardButton(text="💻 Cpu", callback_data="CPT"),
             InlineKeyboardButton(text="💽 Disk", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Geri git", callback_data="settingm")],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
